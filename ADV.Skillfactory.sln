@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADV.Skillfactory", "ADV.Skillfactory\ADV.Skillfactory.csproj", "{53FBA82C-2621-45AD-BFD6-2524C55953A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ADV.Skillfactory", "ADV.Skillfactory\ADV.Skillfactory.csproj", "{53FBA82C-2621-45AD-BFD6-2524C55953A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADV.SkillFactory.Part12", "ADV.SkillFactory.Part12\ADV.SkillFactory.Part12.csproj", "{F3972BA3-9231-461E-8729-C505F9E4C143}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ADV.SkillFactory.Part12", "ADV.SkillFactory.Part12\ADV.SkillFactory.Part12.csproj", "{F3972BA3-9231-461E-8729-C505F9E4C143}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillFactory.ColoringNumbers", "SkillFactory.ColoringNumbers\SkillFactory.ColoringNumbers.csproj", "{39E9550C-68E4-4E7F-A30B-3B6FD174ABF9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F3972BA3-9231-461E-8729-C505F9E4C143}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3972BA3-9231-461E-8729-C505F9E4C143}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3972BA3-9231-461E-8729-C505F9E4C143}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39E9550C-68E4-4E7F-A30B-3B6FD174ABF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39E9550C-68E4-4E7F-A30B-3B6FD174ABF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39E9550C-68E4-4E7F-A30B-3B6FD174ABF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39E9550C-68E4-4E7F-A30B-3B6FD174ABF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

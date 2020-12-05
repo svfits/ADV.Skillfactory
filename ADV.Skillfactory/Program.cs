@@ -9,8 +9,10 @@ namespace ADV.Skillfactory
             const string Name = "Name ";
 
             #region 11
+            Console.WriteLine("Минимальное значение для byte " + Name);
 
             string myName = "Меня зовут Дмитрий";
+            Console.WriteLine("Минимальное значение для byte " + myName);
 
             var minByte = byte.MinValue;
             Console.WriteLine("Минимальное значение для byte " + minByte);
@@ -26,10 +28,8 @@ namespace ADV.Skillfactory
             }
             else
             {
-
+                Console.WriteLine("Сегодня не четверг и на ужин НЕ будет рыбы!");
             }
-
-
 
             double ddd = (double)5 / 2;
             Console.WriteLine(ddd);
