@@ -6,13 +6,19 @@ namespace ADV.Skillfactory
     {
         static void Main(string[] args)
         {
+            //foreach (var item in args)
+            //{
+            //    Console.WriteLine("Пришли аргументы нашего приложения " + item);
+            //    return;
+            //}
+
             const string Name = "Name ";
 
             #region 11
             Console.WriteLine("Минимальное значение для byte " + Name);
 
             string myName = "Меня зовут Дмитрий";
-            Console.WriteLine("Минимальное значение для byte " + myName);
+            Console.WriteLine("Минимальное значение для byte " + myName);             
 
             var minByte = byte.MinValue;
             Console.WriteLine("Минимальное значение для byte " + minByte);
@@ -22,7 +28,7 @@ namespace ADV.Skillfactory
 
             var today = DateTime.Now.DayOfWeek;
 
-            if (today == DayOfWeek.Monday)
+            if (today == DayOfWeek.Thursday)
             {
                 Console.WriteLine("Сегодня четверг и на ужин будет рыба!");
             }
@@ -38,25 +44,37 @@ namespace ADV.Skillfactory
 
             var per = ddd == 2.5 ? i = 1 : i = 2;
 
+            Console.WriteLine(i + " " + per);
+
             #endregion
 
             var param = Console.ReadLine();
             Console.WriteLine("Было введено " + param);
 
+            var genderMan = Gender.Мужчина;
+            var lifeStage = LifeStage.OldMan;
+
+            if (genderMan == Gender.Мужчина && lifeStage == LifeStage.Adult)
+            {
+                Console.WriteLine("Тут мужчина");
+            }
 
             Console.WriteLine("Hello World!");
             Console.ReadLine();
         }
 
-        enum Days
+        enum Gender
         {
-            Monday,
-            Tuesday,
-            Wednesday,
-            Thursday,
-            Friday,
-            Saturday,
-            Sunday
+            Мужчина,
+            Женщина,
+        }
+
+        enum LifeStage
+        {
+            Child,
+            Teenager,
+            Adult,
+            OldMan
         }
     }
 }
