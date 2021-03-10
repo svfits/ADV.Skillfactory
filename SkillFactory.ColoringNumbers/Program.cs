@@ -15,7 +15,7 @@ namespace SkillFactory.ColoringNumbers
 
             var str = new[] { HelloWorldEn, HelloWorldRus, HelloWorldEs };
             var list = Enum.GetValues(typeof(ConsoleColor)).Cast<ConsoleColor>().ToArray();
-            
+
             do
             {
                 foreach (var strs in str)
@@ -23,12 +23,23 @@ namespace SkillFactory.ColoringNumbers
                     foreach (var word in strs)
                     {
                         var rnd = random.Next(list.Count());
-                        Console.ForegroundColor = list[rnd];
+                        var color = list[rnd];
+
+                        if (color == ConsoleColor.Black)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            System.Diagnostics.Debug.WriteLine("Цвет черный сейчас был бы");
+                        }
+                        else
+                        {
+                            Console.ForegroundColor = color;
+                            System.Diagnostics.Debug.WriteLine($"Сейчас цвет { color } ") ;
+                        }
 
                         Console.Write(word);
                         System.Threading.Thread.Sleep(150);
                     }
-                
+
                     Console.WriteLine();
                 }
             } while (true);

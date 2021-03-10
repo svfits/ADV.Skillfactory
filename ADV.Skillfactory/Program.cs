@@ -22,7 +22,7 @@ namespace ADV.Skillfactory
 
             var today = DateTime.Now.DayOfWeek;
 
-            if (today == DayOfWeek.Thursday)
+            if (today == DayOfWeek.Monday)
             {
                 Console.WriteLine("Сегодня четверг и на ужин будет рыба!");
             }
